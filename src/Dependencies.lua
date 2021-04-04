@@ -54,7 +54,7 @@ gFonts = {
 }
 
 gSounds = {
-    ['hit-player'] = love.audio.newSource('sounds/hit_player.wav'),
-    ['door'] = love.audio.newSource('sounds/door.wav'),
-    ['fmusic'] = love.audio.newSource('sounds/Electronic_Fantasy.ogg')
+    ['hit-player'] = love.audio.newSource('sounds/hit_player.wav', "static"),
+    ['door'] = love.audio.newSource('sounds/door.wav', "static"),
+    ['fmusic'] = love.audio.newSource('sounds/Electronic_Fantasy.ogg', "static")
 }

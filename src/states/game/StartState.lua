@@ -27,13 +27,13 @@ function StartState:render()
         VIRTUAL_HEIGHT / gTextures['background']:getHeight())
 
     love.graphics.setFont(gFonts['large'])
-    love.graphics.setColor(34, 34, 34, 255)
-    love.graphics.printf('Arcade', 2, VIRTUAL_HEIGHT / 2 - 30, VIRTUAL_WIDTH, 'center')
+    love.graphics.setColor(0.133, 0.133, 0.133, 1)
+    love.graphics.printf('Arcade', 2, VIRTUAL_HEIGHT / 3, VIRTUAL_WIDTH, 'center')
 
-    love.graphics.setColor(175, 53, 42, 255)
-    love.graphics.printf('Arcade', 0, VIRTUAL_HEIGHT / 2 - 32, VIRTUAL_WIDTH, 'center')
+    love.graphics.setColor(0.68, 0.2, 0.16, 1)
+    love.graphics.printf('Arcade', 0, VIRTUAL_HEIGHT / 3 - 2, VIRTUAL_WIDTH, 'center')
 
-    love.graphics.setColor(255, 255, 255, 255)
+    love.graphics.setColor(1, 1, 1, 1)
     love.graphics.setFont(gFonts['large'])
-    love.graphics.printf('Press Enter', 0, VIRTUAL_HEIGHT / 2 + 64, VIRTUAL_WIDTH, 'center')
+    love.graphics.printf('Press Enter', 0, VIRTUAL_HEIGHT / 3 + 64, VIRTUAL_WIDTH, 'center')
 end

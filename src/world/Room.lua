@@ -234,9 +234,13 @@ function Room:render()
 		love.graphics.draw(self.bulletImage, v.x, v.y)
 	end
 
+self.player:render(self.adjacentOffsetX, self.adjacentOffsetY)
+
     for k, entity in pairs(self.entities) do
         if not entity.dead then entity:render(self.adjacentOffsetX, self.adjacentOffsetY) end
     end
+
+    love.graphics.setCanvas({canvas, stencil=true})
 
     love.graphics.stencil(function()
         -- left
@@ -257,10 +261,6 @@ function Room:render()
     end, 'replace', 1)
 
     love.graphics.setStencilTest('less', 1)
-    
-    if self.player then
-        self.player:render()
-    end
 
     love.graphics.setStencilTest()
 end

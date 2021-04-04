@@ -22,6 +22,7 @@ function love.load()
 
     gSounds['fmusic']:setLooping(true)
     gSounds['fmusic']:play()
+    gSounds['fmusic']:stop()
 
     love.keyboard.keysPressed = {}
 end
