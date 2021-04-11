@@ -31,18 +31,20 @@ require 'src/states/game/PlayState'
 require 'src/states/game/StartState'
 
 gTextures = {
-    ['tiles'] = love.graphics.newImage('graphics/tilesheet.png'),
+    ['tiles'] = love.graphics.newImage('sprites/Floor1Tiles.png'),
     ['background'] = love.graphics.newImage('graphics/game.JPG'),
     ['character-walk'] = love.graphics.newImage('graphics/character_walk.png'),
     ['hearts'] = love.graphics.newImage('graphics/hearts.png'),
-    ['entities'] = love.graphics.newImage('graphics/entities.png')
+    ['entities'] = love.graphics.newImage('graphics/entities.png'),
+    ['wall'] = love.graphics.newImage('sprites/FrontWall.png')
 }
 
 gFrames = {
     ['tiles'] = GenerateQuads(gTextures['tiles'], 16, 16),
     ['character-walk'] = GenerateQuads(gTextures['character-walk'], 16, 32),
     ['entities'] = GenerateQuads(gTextures['entities'], 16, 16),
-    ['hearts'] = GenerateQuads(gTextures['hearts'], 16, 16)
+    ['hearts'] = GenerateQuads(gTextures['hearts'], 16, 16),
+    ['wall'] = GenerateQuads(gTextures['wall'], 16, 16)
 }
 
 gFonts = {

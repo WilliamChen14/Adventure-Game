@@ -213,12 +213,28 @@ function Room:update(dt)
 end
 
 function Room:render()
-    for y = 1, self.height do
-        for x = 1, self.width do
+    for y = 2, self.height - 1 do
+        for x = 2, self.width - 1 do
             local tile = self.tiles[y][x]
-            love.graphics.draw(gTextures['tiles'], gFrames['tiles'][tile.id],
+            love.graphics.draw(gTextures['tiles'], gFrames['tiles'][1],
                 (x - 1) * TILE_SIZE + self.renderOffsetX + self.adjacentOffsetX, 
                 (y - 1) * TILE_SIZE + self.renderOffsetY + self.adjacentOffsetY)
+        end
+    end
+    for y = 1, 1 do 
+        for x = 1, self.width do
+            love.graphics.draw(gTextures['wall'], gFrames['wall'][1], (x - 1) * TILE_SIZE + self.renderOffsetX + self.adjacentOffsetX,  
+            (y - 1) * TILE_SIZE + self.renderOffsetY + self.adjacentOffsetY)
+            love.graphics.draw(gTextures['wall'], gFrames['wall'][1], (y - 1) * TILE_SIZE + self.renderOffsetY + self.adjacentOffsetY ,  
+            (x - 1) * TILE_SIZE + self.renderOffsetX + self.adjacentOffsetX)
+        end
+    end
+    for y = self.height, self.height do 
+        for x = 1, self.width do
+            love.graphics.draw(gTextures['wall'], gFrames['wall'][1], (x - 1) * TILE_SIZE + self.renderOffsetX + self.adjacentOffsetX,  
+            (y - 1) * TILE_SIZE + self.renderOffsetY + self.adjacentOffsetY)
+            love.graphics.draw(gTextures['wall'], gFrames['wall'][1], (y - 1) * TILE_SIZE + self.renderOffsetY + self.adjacentOffsetY ,  
+            (x - 1) * TILE_SIZE + self.renderOffsetX + self.adjacentOffsetX)
         end
     end
 
