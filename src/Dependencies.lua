@@ -29,6 +29,7 @@ require 'src/states/entity/player/PlayerWalkState'
 require 'src/states/game/GameOverState'
 require 'src/states/game/PlayState'
 require 'src/states/game/StartState'
+require 'src/states/game/InstructionsState'
 
 gTextures = {
     ['tiles'] = love.graphics.newImage('sprites/Floor1Tiles.png'),
