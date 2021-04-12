@@ -33,7 +33,7 @@ require 'src/states/game/InstructionsState'
 
 gTextures = {
     ['tiles'] = love.graphics.newImage('sprites/Floor1Tiles.png'),
-    ['background'] = love.graphics.newImage('graphics/game.JPG'),
+    ['background'] = love.graphics.newImage('sprites/Background.png'),
     ['character-walk'] = love.graphics.newImage('graphics/character_walk.png'),
     ['hearts'] = love.graphics.newImage('graphics/hearts.png'),
     ['entities'] = love.graphics.newImage('graphics/entities.png'),
