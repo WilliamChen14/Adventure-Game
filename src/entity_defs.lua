@@ -4,74 +4,74 @@ ENTITY_DEFS = {
         walkSpeed = PLAYER_WALK_SPEED,
         animations = {
             ['walk-left'] = {
-                frames = {13, 14, 15, 16},
+                frames = {1},
                 interval = 0.155,
-                texture = 'character-walk'
+                texture = 'main-character'
             },
             ['walk-right'] = {
-                frames = {5, 6, 7, 8},
+                frames = {1},
                 interval = 0.15,
-                texture = 'character-walk'
+                texture = 'main-character'
             },
             ['walk-down'] = {
-                frames = {1, 2, 3, 4},
+                frames = {1},
                 interval = 0.15,
-                texture = 'character-walk'
+                texture = 'main-character'
             },
             ['walk-up'] = {
-                frames = {9, 10, 11, 12},
+                frames = {1},
                 interval = 0.15,
-                texture = 'character-walk'
+                texture = 'main-character'
             },
             ['idle-left'] = {
-                frames = {13},
-                texture = 'character-walk'
+                frames = {1},
+                texture = 'main-character'
             },
             ['idle-right'] = {
-                frames = {5},
-                texture = 'character-walk'
+                frames = {1},
+                texture = 'main-character'
             },
             ['idle-down'] = {
                 frames = {1},
-                texture = 'character-walk'
+                texture = 'main-character'
             },
             ['idle-up'] = {
-                frames = {9},
-                texture = 'character-walk'
+                frames = {1},
+                texture = 'main-character'
             }
             
         }
     },
     ['skeleton'] = {
-        texture = 'entities',
+        texture = 'slime',
         animations = {
             ['walk-left'] = {
-                frames = {22, 23, 24, 23},
+                frames = {1},
                 interval = 0.2
             },
             ['walk-right'] = {
-                frames = {34, 35, 36, 35},
+                frames = {1},
                 interval = 0.2
             },
             ['walk-down'] = {
-                frames = {10, 11, 12, 11},
+                frames = {1},
                 interval = 0.2
             },
             ['walk-up'] = {
-                frames = {46, 47, 48, 47},
+                frames = {1},
                 interval = 0.2
             },
             ['idle-left'] = {
-                frames = {23}
+                frames = {1}
             },
             ['idle-right'] = {
-                frames = {35}
+                frames = {1}
             },
             ['idle-down'] = {
-                frames = {11}
+                frames = {1}
             },
             ['idle-up'] = {
-                frames = {47}
+                frames = {1}
             }
         }
     }

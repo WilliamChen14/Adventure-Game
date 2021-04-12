@@ -8,8 +8,8 @@ function Entity:init(def)
 
     self.x = def.x
     self.y = def.y
-    self.width = def.width
-    self.height = def.height
+    self.width = 20
+    self.height = 27
 
     self.offsetX = def.offsetX or 0
     self.offsetY = def.offsetY or 0
@@ -39,7 +39,7 @@ function Entity:createAnimations(animations)
 
     for k, animationDef in pairs(animations) do
         animationsReturned[k] = Animation {
-            texture = animationDef.texture or 'entities',
+            texture = animationDef.texture or 'slime',
             frames = animationDef.frames,
             interval = animationDef.interval
         }
