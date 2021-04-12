@@ -6,7 +6,7 @@ function EntityIdleState:init(entity)
     if self.entity.carryingPot == nil then
         self.entity:changeAnimation('idle-' .. self.entity.direction)
     else
-        self.entity:changeAnimation('idle-pot-' .. self.entity.direction)
+        self.entity:changeAnimation('idle-' .. self.entity.direction)
     end
 
     self.waitDuration = 0

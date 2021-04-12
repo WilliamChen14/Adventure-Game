@@ -29,6 +29,7 @@ require 'src/states/entity/player/PlayerWalkState'
 require 'src/states/game/GameOverState'
 require 'src/states/game/PlayState'
 require 'src/states/game/StartState'
+require 'src/states/game/InstructionsState'
 
 gTextures = {
     ['tiles'] = love.graphics.newImage('sprites/Floor1Tiles.png'),
@@ -37,8 +38,8 @@ gTextures = {
     ['hearts'] = love.graphics.newImage('graphics/hearts.png'),
     ['entities'] = love.graphics.newImage('graphics/entities.png'),
     ['wall'] = love.graphics.newImage('sprites/FrontWall.png'),
-    ['main-character'] = love.graphics.newImage('sprites/MC_Front.png'),
-    ['slime'] = love.graphics.newImage('sprites/Slime.png')
+    ['main-character'] = love.graphics.newImage('sprites/Wizard.png'),
+    ['slime'] = love.graphics.newImage('sprites/pixil-frame-0 (10).png')
 }
 
 gFrames = {
@@ -48,7 +49,7 @@ gFrames = {
     ['hearts'] = GenerateQuads(gTextures['hearts'], 16, 16),
     ['wall'] = GenerateQuads(gTextures['wall'], 16, 16),
     ['main-character'] = GenerateQuads(gTextures['main-character'], 16, 32),
-    ['slime'] = GenerateQuads(gTextures['slime'], 32, 16)
+    ['slime'] = GenerateQuads(gTextures['slime'], 16, 16)
 }
 
 gFonts = {

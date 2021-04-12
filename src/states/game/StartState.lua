@@ -17,7 +17,7 @@ function StartState:update(dt)
     end
 
     if love.keyboard.wasPressed('enter') or love.keyboard.wasPressed('return') then
-        gStateMachine:change('play')
+        gStateMachine:change('instructions')
     end
 end
 
@@ -28,10 +28,10 @@ function StartState:render()
 
     love.graphics.setFont(gFonts['large'])
     love.graphics.setColor(0.133, 0.133, 0.133, 1)
-    love.graphics.printf('Arcade', 2, VIRTUAL_HEIGHT / 3, VIRTUAL_WIDTH, 'center')
+    love.graphics.printf('The Tower', 2, VIRTUAL_HEIGHT / 3, VIRTUAL_WIDTH, 'center')
 
     love.graphics.setColor(0.68, 0.2, 0.16, 1)
-    love.graphics.printf('Arcade', 0, VIRTUAL_HEIGHT / 3 - 2, VIRTUAL_WIDTH, 'center')
+    love.graphics.printf('The Tower', 0, VIRTUAL_HEIGHT / 3 - 2, VIRTUAL_WIDTH, 'center')
 
     love.graphics.setColor(1, 1, 1, 1)
     love.graphics.setFont(gFonts['large'])
