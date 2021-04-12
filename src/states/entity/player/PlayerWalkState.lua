@@ -25,10 +25,6 @@ function PlayerWalkState:update(dt)
         self.entity:changeState('idle')
     end
 
-    if love.keyboard.wasPressed('space') then
-        self.entity:changeState('swing-sword')
-    end
-
     EntityWalkState.update(self, dt)
 
     if self.wallbumped then

@@ -30,7 +30,7 @@ function Room:init(player, dungeon)
     Level = Level + 2
 
     self.bullets = {}
-    self.bulletImage = love.graphics.newImage('bullet.png')
+    self.bulletImage = love.graphics.newImage('sprites/fireball.png')
 
     self.mouseCounter = 0
 end
